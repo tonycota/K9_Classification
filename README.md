@@ -1,12 +1,12 @@
 # K9_Classification
 Ashley Nguyen's and Armando Cota's submission for Final Project
 
-# Overview
+## Overview
 
-# Results
+## Results
 
-# Conclusion
+## Conclusion
 
-# Data Sources
+## Data Sources
 [csv for binary classification](https://www.kaggle.com/datasets/marshuu/dog-breeds)
 [images for cnn model](https://www.kaggle.com/datasets/miljan/stanford-dogs-dataset-traintest)
