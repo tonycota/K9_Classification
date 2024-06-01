@@ -1,4 +1,4 @@
-# K9_Classification
+# K9 Classification
 Ashley Nguyen's and Armando Cota's submission for Final Project
 
 ## Overview
