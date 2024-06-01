@@ -7,8 +7,6 @@ Ashley Nguyen's and Armando Cota's submission for Final Project
 
 # Conclusion
 
-# Works Cited
-
-# Data and Research Sources
+# Data Sources
 [csv for binary classification](https://www.kaggle.com/datasets/marshuu/dog-breeds)
 [images for cnn model](https://www.kaggle.com/datasets/miljan/stanford-dogs-dataset-traintest)
