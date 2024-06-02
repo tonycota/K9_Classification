@@ -32,10 +32,15 @@ After studying different models from the given url (https://keras.io/api/applica
 * VGG19
 * Xception
 
+![alt text](Outputs/vgg19_model_screenshot.jpeg)
+
 Given the three sample photos to each pre-trained models, prediction scores of each breed of dog were recorded and ingested into Pandas Dataframes which can be found under the Notebooks folder (efficient_net_b7_model.ipynb, inception_res_net_v2.ipynb, mobile_net_model.ipynb, vgg19_model.ipynb, and xception_model.ipynb). 5 dataframes were written to csv files and were then initialized into a SQLite database (found in joining_tables.ipynb). The dataframes were then joined together to draw conclusive results as to which pre-trained model worked best with our given data. 
+
 ![alt text](Outputs/accuracy_graph.png)
 Noted, the MobileNet model performed best on the given photo of just the yorkshire terrier, while the VGG19 model predicted the photo second best out of the given dataset. 
+
 ![alt text](Outputs/overall_accuracy_graph.png)
+
 In the graph above lists the average prediction accuracies achieved by each pre-trained model. MobileNet performed the overall best with predicting which dog breed was which, with InceptionResNetV2 second and VGG19 third. 
 
 This part of the project was completed to conclude if our given data needed further cleaning in order to build a substantial CNN model. Given these results listed above, it is apparent our data was readily produced. 
