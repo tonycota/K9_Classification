@@ -1,5 +1,9 @@
 # K9_Classification
 
+## Goals
+
+BRIEF INTRO OF EACH SECTION
+
 # Binary Classification
 
 ## Dependencies utilized:
