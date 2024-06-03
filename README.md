@@ -4,8 +4,6 @@
 
 BRIEF INTRO OF EACH SECTION
 
-# Binary Classification
-
 ## Dependencies utilized:
 * PySpark
 * SQL
@@ -14,6 +12,10 @@ BRIEF INTRO OF EACH SECTION
 * Sklearn
 * NumPy
 * Matplotlib
+* Scikit-Learn
+* SQL and SQLite
+
+# Binary Classification
 
 ## Overview
 The purpose of this section is to train and evaluate various binary classification models to evaluate the accuracy predicting a dog's lifespan. <br/>
