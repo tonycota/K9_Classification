@@ -4,6 +4,11 @@
 
 BRIEF INTRO OF EACH SECTION
 
+### Convolutional Neural Network Model / Image Classification
+The objective of this part of the repository is to generate a CNN model to train on a image dataset of dogs to predict which specific breed it is given. Secondly,
+an analysis was performed to determine which of the five pre-trained keras models performs best with making predictions of specific dog breeds given. Details of this section
+can be found below.
+
 ## Dependencies utilized:
 * PySpark
 * SQL
@@ -111,14 +116,22 @@ After studying different models from the given url (https://keras.io/api/applica
 
 ![alt text](Outputs/vgg19_model_screenshot.jpeg)
 
-Given the three sample photos to each pre-trained models, prediction scores of each breed of dog were recorded and ingested into Pandas Dataframes which can be found under the Notebooks folder (efficient_net_b7_model.ipynb, inception_res_net_v2.ipynb, mobile_net_model.ipynb, vgg19_model.ipynb, and xception_model.ipynb). 5 dataframes were written to csv files and were then initialized into a SQLite database (found in joining_tables.ipynb). The dataframes were then joined together to draw conclusive results as to which pre-trained model worked best with our given data. 
+Given the three sample photos to each pre-trained models, prediction scores of each breed of dog were recorded and ingested into Pandas Dataframes which can be found under the Notebooks folder (efficient_net_b7_model.ipynb, inception_res_net_v2.ipynb, mobile_net_model.ipynb, vgg19_model.ipynb, and xception_model.ipynb).
+
+![alt text](Outputs/join_tables.jpg)
+
+ 5 dataframes were written to csv files and were then initialized into a SQLite database (found in joining_tables.ipynb). The dataframes were then joined together to draw conclusive results(as seen above) as to which pre-trained model worked best with our given data. 
+
 
 ![alt text](Outputs/accuracy_graph.png)
-Noted, the MobileNet model performed best on the given photo of just the yorkshire terrier, while the VGG19 model predicted the photo second best out of the given dataset. 
+Note, the MobileNet model performed best on the given photo of just the yorkshire terrier, while the VGG19 model predicted the photo second best out of the given dataset. 
+
+Before the final graph of showing over all best accuracy of predictions of the dog breeds, a new data frame had to be created as can be seen below. 
+![alt text](Outputs/join_tables.jpg)
 
 ![alt text](Outputs/overall_accuracy_graph.png)
 
-In the graph above lists the average prediction accuracies achieved by each pre-trained model. MobileNet performed the overall best with predicting which dog breed was which, with InceptionResNetV2 second and VGG19 third. 
+In the graph above lists the average prediction accuracies achieved by each pre-trained model. MobileNet performed the overall best with predicting which dog breed was which, with InceptionResNetV2 second and VGG19 third.
 
 This part of the project was completed to conclude if our given data needed further cleaning in order to build a substantial CNN model. Given these results listed above, it is apparent our data was readily produced. 
 
@@ -127,4 +140,5 @@ Sources
 * https://www.kaggle.com/code/nayanack/breed-classification/input
 * https://keras.io/api/applications/
 * https://stackoverflow.com/questions/69114904/how-to-properly-load-and-use-pre-trained-model-in-keras
+
 Ashley Nguyen's and Armando Cota's submission for Final Project
