@@ -14,11 +14,6 @@ The purpose is to to create machine learning models to identify the life span of
       * Efficient Net B7
       * Inception Res Net V2
       * Mobile Net
-  
-### Convolutional Neural Network Model / Image Classification
-The objective of this part of the repository is to generate a CNN model to train on a image dataset of dogs to predict which specific breed it is given. Secondly,
-an analysis was performed to determine which of the five pre-trained keras models performs best with making predictions of specific dog breeds given. Details of this section
-can be found below.
 
 ## Dependencies utilized:
 * PySpark
