@@ -6,7 +6,7 @@ The purpose is to to create machine learning models to identify the life span of
   * Neural Network Model
   * Random Forest Model
   * Simple Vector Machine (SVM)
-* Image Classification was made by using Convolutional Neural Network (CNN) Model to identify the dog breed.
+* Image Classification / Convolutional Neural Network (CNN) Model to identify the dog breed.
   * Pretrained Models used:
     * VGG19
     * Xception
