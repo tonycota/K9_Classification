@@ -44,7 +44,7 @@ There were a total of 117 values in the dataset used to measure accuracy. First,
 
 Next, the data was cleaned again for binary classification. Using PySpark, the values in columns character traits and common health problems were exploded then split into new columns. This allowed for more factors to predict longevity for dogs, which consisted of 38 new columns from character traits and 29 from common health problems. After cleaning the data, the dataframe was converted back to pandas for binary classification models that included: neural network model, random forest model, and support vector machine (svm). <br/>
 
-Within each model, the data was seperated into labels (longevity(yrs)_class) and features (all data excluding longevity(yrs)_class). These factors were used to split into training and testing datasets to create multiple binary classification models stated above. From testing each model, we wanted an accuracy of at least 70%.
+Within each model, the data was seperated into labels (longevity(yrs)_class) and features (all data excluding longevity(yrs)_class). The longevity is split based upon years lived: less than 10 years is short-life span (0), between 10 to 13 years is medium-lived (1), and above 12 years is long-lived (2). These factors were used to split into training and testing datasets to create multiple binary classification models stated above. From testing each model, we wanted an accuracy of at least 70%.
 
 ## Results & Analysis
 
@@ -146,5 +146,3 @@ Sources
 * https://www.kaggle.com/code/nayanack/breed-classification/input
 * https://keras.io/api/applications/
 * https://stackoverflow.com/questions/69114904/how-to-properly-load-and-use-pre-trained-model-in-keras
-
-Ashley Nguyen's and Armando Cota's submission for Final Project
